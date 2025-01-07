@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/02a045a587.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header"></div>
+     <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()" ></i>
+            
+        </nav>
+        <div class="header-text">
+            <p>Web developer</p>
+            <h1>Hi, I'm <span>Sanku</span><br>Kumar<br>from Assam</h1>
+            
+        </div>
+     </div>
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="images/phto.png" class="photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm always eager to learn new technologies and stay up-to-date with industry trends. My goal is to deliver exceptional web solutions that exceed client expectations.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web development</span><br>Designing Web Interface</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>CodSoft</span><br>Web developer intern<br>Aug 2023 - sep 2023</li>
+                            <li><span>NIELIT</span><br>Web developer intern<br>Aug 2024 - Oct 2024</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-25</span><br>Pursuing B.E CSE degree from University Institute of Technology, Burdwan</li>
+                            <li><span>2018-21</span><br>Completed 12th from the Assam Higher Secondary Education and Council Board, Assam</li>
+                            <li><span>2017-18</span><br>Completed 10th from the Board of Secondary Education, Assam </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--services-->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>  
+                            I specialize in creating responsive, user-friendly websites that bring your vision to life. With expertise in HTML, CSS, JavaScript, and front-end frameworks, I offer services in web development, UI/UX design, and site optimization. Let’s work together to build a captivating online presence for your brand.</p>
+                            <a href="#">Learn more</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+     </div>
+     <!--------portfolio------->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png">
+                    <div class="layer">
+                        <h3>To-do list</h3>
+                        <p>A user-friendly to-do list website designed for seamless task management. Organize tasks, set deadlines, and prioritize effortlessly. Stay productive with intuitive features that keep you on track and focused.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+                <div class="work">
+                    <img src="images/work2.png">
+                    <div class="layer">
+                        <h3>eShop</h3>
+                        <p>An eShop for buying and selling paintings. Explore diverse artworks, connect with artists, and showcase your creations. Secure transactions, user-friendly interface, and curated collections for art enthusiasts and collectors alike.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+        </div>
+     </div>
+     <!---------contact--------->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>sankukumar0101@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>6003632177</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/__evergreen_song__?igsh=MWw2Y2xjeG00dmtmYQ=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/SankuKumar18?t=CuoAjL66hBV3B0DzzI-glg&s=09"><i class="fa-solid fa-x"></i></a>
+                        <a href="https://www.linkedin.com/in/sanku-kumar-69803b263"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Sanku_Kumar.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">Message sent successfully</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright ©Sanku</p>
+        </div>
+     </div>
+     <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+     </script>
+     <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+     </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx-vmsjD-QyhGxsM4N_udlxypID8FUw_yQnYOIZLzAZkZj345GCL3aCABSSAvNhzDdQKg/exec';
+const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById("msg");
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+      msg.innerHTML = "Message sent successfully";
+      msg.style.display = "block"; // Show the message
+      setTimeout(function(){
+          msg.style.display = "none"; // Hide after 3 seconds
+      }, 3000);
+      form.reset();
+    })
+    .catch(error => console.error('Error!', error.message));
+});
+
+      </script>
+</body>
+</html>
